@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex3</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: black;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        height: 780px;
+        width: 610px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightblue;
+        height: 100px;
+        width: 598px;
+      }
+      .middle {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        width: 600px;
+      }
+      .left {
+        height: 400px;
+        width: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      .right {
+        height: 400px;
+        width: 390px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+        height: 120px;
+        width: 200px;
+      }
+
+      .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: yellow;
+        height: 300px;
+        width: 390px;
+      }
+      .aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgreen;
+        height: 280px;
+        width: 200px;
+      }
+      .extra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+        height: 100px;
+        width: 390px;
+      }
+      .bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+      }
+      .images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aqua;
+        height: 150px;
+        width: 450px;
+      }
+      .posts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: pink;
+        height: 150px;
+        width: 140px;
+      }
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blanchedalmond;
+        height: 100px;
+        width: 598px;
+      }
+    </style>
+
+    <div class="container">
+      <div class="header"><h2>HEADER</h2></div>
+      <div class="middle">
+        <div class="left">
+          <div class="hero"><h2>HERO</h2></div>
+          <div class="aside"><h2>SIDEBAR</h2></div>
+        </div>
+        <div class="right">
+          <div class="main"><h2>MAIN CONTENT</h2></div>
+          <div class="extra"><h2>EXTRA CONTENT</h2></div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="images"><h2>RELATED IMAGES</h2></div>
+        <div class="posts"><h2>RELATED POSTS</h2></div>
+        <div class="footer"><h2>FOOTER</h2></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex2</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left"><h1>L1</h1></div>
+
+      <div class="right">
+        <div class="one"><h1>R1</h1></div>
+        <div class="two"><h1>R2</h1></div>
+        <div class="three"><h1>R3</h1></div>
+        <div class="four"><h1>R4</h1></div>
+      </div>
+    </div>
+
+    <style>
+      body {
+        background-color: black;
+      }
+      .main {
+        background-color: grey;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 620px;
+        gap: 17px;
+      }
+      .left {
+        background-color: white;
+        height: 80%;
+        width: 32%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .right {
+        /* background-color: white; */
+        display: flex;
+        flex-wrap: wrap;
+        height: 80%;
+        width: 62%;
+        gap: 16px;
+      }
+      .one {
+        background-color: white;
+        height: 28%;
+        width: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .two {
+        background-color: white;
+        height: 28%;
+        width: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .three {
+        background-color: white;
+        height: 28%;
+        width: 98%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .four {
+        background-color: white;
+        height: 28%;
+        width: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </body>
+</html>
